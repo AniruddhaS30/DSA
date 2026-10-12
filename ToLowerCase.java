@@ -12,7 +12,7 @@ public class ToLowerCase{
     public static String LowerCase(String s){
         StringBuilder result = new StringBuilder();//StringBuilder: strings can't be changed in place, so we collect characters here
         for(int i=0;i<s.length();i++){
-            char ch = s.charAt(i);
+            char ch = s.charAt(i);// Get the character at index i so we can check and convert it
             if(Character.isUpperCase(ch)){
                 result.append(Character.toLowerCase(ch));
             }
